@@ -1,0 +1,9 @@
+body{
+    background-image: url("../images/Background.jpg");
+    background-size: 100%;
+}
+#links {
+    padding: 10px 20px 10px 20px;
+    margin: 0% 5% 0% 5%;
+
+}
