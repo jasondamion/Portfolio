@@ -4,7 +4,17 @@ body{
 }
 .display-1{
     text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 #links {
      font-size: 100%
+}
+.display-4{
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.lead,.list-group-item{
+    font-family: 'Kalam', cursive;
+
+
 }
