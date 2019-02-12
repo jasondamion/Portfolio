@@ -6,23 +6,26 @@
         crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <script src = "assets/javascript/app.js"></script>
 
 </head>
 
 <body>
     <div class="container">
         <div class="row">
-            <div class ="col-2">
-                <img src="PlaceHolder.jpg" alt = "Profile Picture" width="80%" height= "110%">
+            <div class ="col-3">
+                <img src="assets/images/Me2.png" alt = "Profile Picture" width="90%" height= "100%">
+                <!-- Add photo -->
             </div>
-            <div class="col-6"></div>
+            <div class="col-5"></div>
             <div class="col-4">
                 <a href="#" id="links" class="badge badge-primary">Home</a>
                 <a href="#Skills" id="links" class="badge badge-primary">Skills</a>
@@ -49,6 +52,8 @@
                             needs.
                             Willing to continue learning more to meet the guidelines of any job.</strong></p>
                 </div>
+                <!-- Hard to read text, change what it looks like -->
+                <!-- Give an example of something personal to me -->
             </div>
         </div>
 
@@ -64,7 +69,7 @@
         <hr class="my-3">
 
         <div class="row">
-            <div class="col-1"></div>
+            <div class="col-3"></div>
             <div class="col-3">
                 <div class="card" style="width: 18rem;">
                     <ul class="list-group list-group-flush">
@@ -96,24 +101,6 @@
                         <li class="list-group-item">Security and Session Storage</li>
                         <li class="list-group-item">User Authentication</li>
                         <li class="list-group-item">Writing Tests</li>
-
-                    </ul>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card" style="width: 18rem;">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">FTP Client (Filezilla)</li>
-                        <li class="list-group-item">Coming soon :)</li>
-                        <li class="list-group-item">Coming soon :)</li>
-                        <li class="list-group-item">Coming soon :)</li>
-                        <li class="list-group-item">Coming soon :)</li>
-                        <li class="list-group-item">Coming soon :)</li>
-                        <li class="list-group-item">Coming soon :)</li>
-                        <li class="list-group-item">Coming soon :)</li>
-                        <li class="list-group-item">Coming soon :)</li>
-                        <li class="list-group-item">Coming soon :)</li>
-                        <li class="list-group-item">Coming soon :)</li>
 
                     </ul>
                 </div>
@@ -163,6 +150,7 @@
                         </a>
                     </div>
                 </div>
+                <!-- Put pictures below also -->
             </div>
         </div>
         <br>
@@ -190,17 +178,36 @@
                         alt="Facebook Link" width="90%" height="90%"></a>
             </div>
             <div class="col-2">
-                <a href="mailto:jasonfswd@gmail.com?subject=Inquiry%20for%20website"><img src="assets/images/gmail.png"
+                <a href="mailto:jasonfswd@gmail.com?subject=Inquiry%20for%20website&amp;body=Please%20state%20your%20name,%20email,%20and%20your%20website%20requirements%20and%20what%20you%20want%20on%20it"><img src="assets/images/gmail.png"
                         alt="Gmail Link" width="90%" height="90%"></a>
             </div>
         </div>
 
         <div class="row">
             <div class="col-4"></div>
-            <div class="col-4">
-                 <h5 class = "lead">Inquire for website or price estimate clicking the gmail button or manually emailing me.</h5>
+            <div class="col-4" id = "foot">
+                    <div class="container">  
+                            <form id="contact" action="" method="post">
+                              <h3>Inquire for a website below</h3>
+                              <h4>Please state what you want in the website and a list of requirements</h4>
+                              <fieldset>
+                                <input placeholder="Your name" id="Name" type="text" tabindex="1" required autofocus>
+                              </fieldset>
+                              <fieldset>
+                                <input placeholder="Your Email Address" id="Email" type="email" tabindex="2" required>
+                              </fieldset>
+                              <fieldset>
+                                <textarea placeholder="Type your message here...." id="Body" tabindex="5" required></textarea>
+                              </fieldset>
+                              <fieldset>
+                                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                              </fieldset>
+                            </form>
+                          </div>
+                <!-- Make a form with your email address and body -->
+                <!-- <h5 class = "lead">Inquire for website or price estimate clicking the gmail button or manually emailing me.</h5>
                 <h5 class = "lead">Phone Number: 347-792-9311</h5>
-                <h5 class = "lead">Gmail: jasonfswd@gmail.com</h5>
+                <h5 class = "lead" >Gmail: jasonfswd@gmail.com</h5> -->
             </div>
         </div>
     </div>
