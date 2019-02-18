@@ -16,8 +16,8 @@ async function main(){
   var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-           user: 'jasonfswd@gmail.com',
-           pass: 'Nelson2009'
+           user: "add when ready",
+           pass: "add when ready"
        }
    });
 
