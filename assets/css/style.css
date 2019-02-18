@@ -6,8 +6,11 @@ body{
     text-align: center;
     font-family: 'Noto Sans KR', sans-serif;
 }
-#links {
-     font-size: 100%
+#skillLink,#projectLink,#contactLink {
+     font-size: 5vh
+}
+#Projects{
+  opacity: 1.0;
 }
 .display-4{
     text-align: center;
@@ -18,7 +21,10 @@ body{
 
 
 }
-#foot{
+.flex{
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
 * {

@@ -1,5 +1,6 @@
 var nodemailer = require('nodemailer');
 
+
 $("#contact-submit").on("click", function(){
 event.preventDefault();
 //Variables for the content of the gmail
