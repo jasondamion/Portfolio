@@ -18,6 +18,7 @@ body{
 }
 .lead,.list-group-item{
     font-family: 'Karla', sans-serif;
+    font-size: 4vh;
 
 
 }
