@@ -1,6 +1,18 @@
-body{
-    background-image: url("../images/Background.jpg");
-    background-size: 100%;
+.Top_container_fluid{
+ background-image: url("../images/Top_Background.jpg");
+ background-size: 100%;
+}
+.Middle_container_2{
+background-image: url("../images/Skills_Background.jpg");
+ background-size: 100%;
+}
+.End_container{
+  background-image: url("../images/Skills_Background.jpg");
+  background-size: 100%;
+}
+.footer_container{
+  background-image: url("../images/Footer.jpg");
+  background-size: 100%;
 }
 .display-1{
     text-align: center;
@@ -19,8 +31,9 @@ body{
 .lead,.list-group-item{
     font-family: 'Karla', sans-serif;
     font-size: 150%;
-
-
+}
+#Full_Name_Start{
+  text-align: left;
 }
 .flex{
   display:flex;
