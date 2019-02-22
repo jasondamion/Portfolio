@@ -6,8 +6,9 @@
   text-align: center;
 }
 .Top_container_fluid{
- background-image: url("../images/Top_Background.jpg");
- background-size: 100%;
+ background-image: url("../images/Top_Background1.jpg");
+ padding-bottom: 10%;
+  background-size: 100%;
 }
 .Middle_container_2{
 background-image: url("../images/Skills_Background.jpg");
