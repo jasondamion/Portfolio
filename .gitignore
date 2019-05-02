@@ -2,12 +2,18 @@
 /node_modules
 /.pnp
 .pnp.js
+.htaccess
+googlee3424cd37ae621b8.html
 
 # testing
 /coverage
+/package-lock.json
+/package.json
+.gitignore
 
 # production
 /build
+sitemap.xml
 
 # misc
 .DS_Store

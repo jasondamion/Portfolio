@@ -1,13 +1,27 @@
 <!DOCTYPE html>
 
 <head>
-    <title>Jason Nelson Portfolio</title>
+    <title>An Online Hub for Jason Nelson, A Full Stack Web Developer</title>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Jasondesigns.net is a site where you can view who Jason Nelson is and what he does. You can also sign up to have a website made for you. Click me, you wont regret it!">
+    <meta name="keywords"
+        content="Jason, Nelson, Full, Stack, Front-End, Back-End ,Developer, Portfolio, HTML, CSS, JavaScript, Designs">
+    <meta name="author" content="Jason Nelson">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135035759-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-135035759-1');
+    </script>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
@@ -17,7 +31,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="./assets/javascript/app.js" defer></script>
 </head>
 
 <body>
@@ -26,30 +40,32 @@
         <div class="row">
 
             <div class="col-3" id="top">
-                <img src="#" alt="Logo" width="90%" height="100%">
+                <img src="./assets/images/AWS_Certified_Logo_588x300_White.png" alt="Logo" width="90%" height="100%">
+                <button type="button" class="btn btn-outline-primary" id="back_to_top"><a href="#top">Back to
+                        top</button>
             </div>
 
-            <button type="button" id="test" class="btn btn-outline-info">Back to top</button>
-
             <div class="col-5 flex">
-                <a href="#Skills" id="skillLink" class="badge badge-transparent text-white"><img
-                        src="assets/images/Skills.png" width="40vh" height="40vh">Skills</a>
+                <a href="#Tech" id="techLink" class="badge badge-transparent text-white"><img
+                        src="assets/images/Skills.png" width="40vh" height="40vh">Tech</a>
                 <a href="#Projects" id="projectLink" class="badge badge-transparent text-white"><img
                         src="assets/images/Projects.png" width="40vh" height="40vh">Projects</a>
                 <a href="#Contact" id="contactLink" class="badge badge-transparent text-white"><img
                         src="assets/images/contact.png" width="40vh" height="40vh">Contact</a>
+                <a href="assets/images/JasonNelsonResumeMid-Point(2).pdf" id="contactLink" class="badge badge-transparent text-white"><img
+                        src="assets/images/profiles.png" width="40vh" height="40vh">Resume</a>
             </div>
 
             <div class="col-4 flex">
 
                 <a href="https://www.linkedin.com/in/jason-n-84778a124/"><img src="assets/images/linkedin.png"
-                        alt="Linkedin Link" width="90vh" height="90vh"></a>
+                        alt="Linkedin Link" width="60vw" height="60vh"></a>
 
                 <a href="https://github.com/jasondamion"><img src="assets/images/Github.png" alt="Github Link"
-                        width="90vh" height="90vh"></a>
+                        width="60wh" height="60vh"></a>
 
-                <a href="https://www.facebook.com/Jason-nelson-137236389680574/"><img src="assets/images/facebook.png"
-                        alt="Facebook Link" width="90vh" height="90vh"></a>
+                <a href="https://www.facebook.com/Jason-Designs-2288693944713457"><img src="assets/images/facebook.png"
+                        alt="Facebook Link" width="60vw" height="60vh"></a>
 
             </div>
 
@@ -68,6 +84,7 @@
                     <br>
                     <br>
                     <h1 class="display-1 text-white" id="Full_Name_Start">Jason Nelson</h1>
+                    <hr class="my-3">
                     <p class="lead text-white">Full stack web Developer</p>
                     <br>
                     <br>
@@ -92,7 +109,7 @@
                 everything I do. Attended the Rutgers Coding Bootcamp. Most comfortable with javascript,
                 HTML,
                 and CSS. Has experience working in multiple fast pace environments as a customer service
-                associate. Enjoys using listening skills to make applications based on the end-user’s
+                associate. Enjoys using listening skills to make applications based on the end-user
                 needs.
                 Willing to continue learning more to meet the guidelines of any job.</strong></p>
     </div>
@@ -103,8 +120,8 @@
         <br>
         <div class="row">
 
-            <div class="col-12 flex" id="Skills">
-                <h1 class="display-3">Skills</h1>
+            <div class="col-12 flex" id="Tech">
+                <h1 class="display-3">Technology Summary</h1>
             </div>
 
         </div>
@@ -116,36 +133,60 @@
 
             <div class="col-3 flex">
                 <div class="card" style="width: 18rem;">
+                    <div class="card-header">
+                        Front-End
+                      </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Html</li>
-                        <li class="list-group-item">CSS</li>
+                        <li class="list-group-item">HTML5</li>
+                        <li class="list-group-item">CSS3</li>
                         <li class="list-group-item">JavaScript</li>
-                        <li class="list-group-item">jQuery</li>
-                        <li class="list-group-item">Responsive Design</li>
-                        <li class="list-group-item">JBootstrap</li>
-                        <li class="list-group-item">Handlebars</li>
-                        <li class="list-group-item">Cookies, Local Storage</li>
-                        <li class="list-group-item">React.js</li>
-                        <li class="list-group-item">Heroku</li>
-                        <li class="list-group-item">Git</li>
+                        <li class="list-group-item">JQuery</li>
+                        <li class="list-group-item">Ajax</li>
+                        <li class="list-group-item">DOM Manipulation</li>
+                        <li class="list-group-item">API's</li>
+                        <li class="list-group-item">ReactJS</li>
                     </ul>
                 </div>
             </div>
             <div class="col-3 flex">
                 <div class="card" style="width: 18rem;">
+                    <div class="card-header">
+                        Back-End
+                      </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Github Pages</li>
-                        <li class="list-group-item">Data Structures</li>
-                        <li class="list-group-item">Algorithms</li>
-                        <li class="list-group-item">JAVA</li>
+                        <li class="list-group-item">NodeJS</li>
+                        <li class="list-group-item">HandlebarsJS</li>
+                        <li class="list-group-item">ExpressJS</li>
                         <li class="list-group-item">MySQL</li>
+                        <li class="list-group-item">Java</li>
                         <li class="list-group-item">MongoDB</li>
-                        <li class="list-group-item">Node.Js</li>
-                        <li class="list-group-item">Express.Js</li>
-                        <li class="list-group-item">Security and Session Storage</li>
-                        <li class="list-group-item">User Authentication</li>
-                        <li class="list-group-item">Writing Tests</li>
-
+                        <li class="list-group-item">Sequelize/Mongoose</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-3 flex">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header">
+                        Software
+                      </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Github</li>
+                        <li class="list-group-item">Git Version Control</li>
+                        <li class="list-group-item">Firebase</li>
+                        <li class="list-group-item">Git Bash</li>
+                        <li class="list-group-item">Command Prompt</li>
+                        <li class="list-group-item">FTP Client</li>
+                        <li class="list-group-item">AWS Console/CLI/SDK</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-3 flex">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header">
+                        Certifications
+                      </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">AWS Cloud Practitioner</li>
                     </ul>
                 </div>
             </div>
@@ -171,22 +212,39 @@
                             </ol>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="d-block" src="./assets/images/placeholder-slides.png" alt="First slide">
+                                    <img class="d-block" src="./assets/images/daycarePic.PNG" alt="First slide">
                                     <div class="carousel-caption">
-                                        <h5>Caption for pic 1</h5>
+                                        <h5>A daycare web app made to keep track of the kids in my church</h5>
+                                        <h5>They can be clocked in, clocked out, or have their information be retireved
+                                        </h5>
+                                        <h5>The app is a full stack site so it uses express to view the page.</h5>
+                                        <h5 id="link_to_github"><a href="https://github.com/jasondamion/day_Care">Link
+                                                to github</a>
+                                        </h5>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block" src="./assets/images/placeholder-slides.png"
-                                        alt="Second slide">
+                                    <img class="d-block" src="./assets/images/bamazonPic.PNG" alt="Second slide">
+                                    <div class="carousel-caption">
+                                        <h5>A fake amazon made to imitate a inventory system solely on the backend</h5>
+                                        <h5 id="link_to_github"><a href="https://github.com/jasondamion/bamazon">Link to
+                                                github</a>
+                                        </h5>
+                                    </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block" src="./assets/images/FIghting_Game_Project.PNG" alt="Fighting Game">
+                                    <img class="d-block" src="./assets/images/FIghting_Game_Project.PNG"
+                                        alt="Fighting Game">
+
                                     <h5>A fighting game using a super hero api.</h5>
-                                    <h5>The computer chooses a random opponent and you search yours.</h5> 
+                                    <h5>The computer chooses a random opponent and you search yours.</h5>
                                     <h5>The winner is displayed at the bottom.</h5>
-                                    <h5 id = "link_to_site"><a href="https://mugencoder.github.io/Heroes_VS_Heroes/">Link to site</a></h5>
-                                    <h5 id = "link_to_github"><a href="https://github.com/MugenCoder/Heroes_VS_Heroes">Link to github</a></h5>
+                                    <h5 id="link_to_site"><a href="https://mugencoder.github.io/Heroes_VS_Heroes/">Link
+                                            to site</a></h5>
+                                    <h5 id="link_to_github"><a
+                                            href="https://github.com/MugenCoder/Heroes_VS_Heroes">Link to github</a>
+                                    </h5>
+
                                 </div>
                             </div>
                             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
@@ -219,7 +277,8 @@
         <div class="row flex">
             <div class="col-12">
                 <div class="form_container flex" id="Form">
-                    <a class="btn btn-secondary" href="https://goo.gl/forms/1VS3tKi5iNQ1hQDG3" role="button">Click me to
+                    <a class="btn btn-secondary" href="https://goo.gl/forms/1VS3tKi5iNQ1hQDG3" role="button">Click
+                        me to
                         fill out the form</a>
                 </div>
                 <br>
