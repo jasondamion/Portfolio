@@ -1,305 +1,618 @@
-<!DOCTYPE html>
-
+ <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>An Online Hub for Jason Nelson, A Full Stack Web Developer</title>
     <meta charset="UTF-8">
-    <meta name="description"
-        content="Jasondesigns.net is a site where you can view who Jason Nelson is and what he does. You can also sign up to have a website made for you. Click me, you wont regret it!">
-    <meta name="keywords"
-        content="Jason, Nelson, Full, Stack, Front-End, Back-End ,Developer, Portfolio, HTML, CSS, JavaScript, Designs">
-    <meta name="author" content="Jason Nelson">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143931738-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-143931738-1');
-</script>
-
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
-    <script src="./assets/javascript/app.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jason Nelson</title>
+    <link rel="stylesheet" type="text/css" href="css/master.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
+    <link href="https://cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css" rel="stylesheet">
 </head>
-
 <body>
-    <div class="Top_container_fluid">
 
+<header class="header">
+    <div class="container">
         <div class="row">
-
-            <div class="col-3" id="top">
-                <img src="./assets/images/AWS_Certified_Logo_588x300_White.png" alt="Logo" width="90%" height="100%">
-                <button type="button" class="btn btn-outline-primary" id="back_to_top"><a href="#top">Back to
-                        top</button>
+            <div class="col-md-3 col-xs-8 slideInLeft">
+                <div class="logo">
+                    <span class="point">Jason</span>
+                </div>
             </div>
-
-            <div class="col-7 flex">
-                <a href="#Tech" id="techLink" class="badge badge-transparent text-white"><img
-                        src="assets/images/Skills.png" width="40vh" height="40vh">Tech</a>
-                <a href="#Projects" id="projectLink" class="badge badge-transparent text-white"><img
-                        src="assets/images/Projects.png" width="40vh" height="40vh">Projects</a>
-                <a href="#Contact" id="contactLink" class="badge badge-transparent text-white"><img
-                        src="assets/images/contact.png" width="40vh" height="40vh">Contact</a>
-                <a href="assets/images/Jason Nelson Resume Online.pdf" id="contactLink" class="badge badge-transparent text-white"><img
-                        src="assets/images/profiles.png" width="40vh" height="40vh">Resume</a>
+            <div class="col-md-9 hidden-sm hidden-xs slideInRight">
+                <div class="main-menu">
+                    <ul class="list-inline">
+                        <li><a href="#hello">Hello</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#feedback">Services</a></li>
+                        <li><a href="#contact">Contact me</a></li>
+                    </ul>
+                </div>
             </div>
-
-            <div class="col-2 flex">
-
-                <a href="https://www.linkedin.com/in/jason-n-84778a124/"><img src="assets/images/linkedin.png"
-                        alt="Linkedin Link" width="60vw" height="60vh"></a>
-
-                <a href="https://github.com/jasondamion"><img src="assets/images/Github.png" alt="Github Link"
-                        width="60wh" height="60vh"></a>
-
-            </div>
-
-
-        </div>
-
-
-
-        <div class="row">
-            <div class="col-8">
-                <div class="jumbotron bg-transparent">
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <h1 class="display-1 text-white" id="Full_Name_Start">Jason Nelson</h1>
-                    <hr class="my-3">
-                    <p class="lead text-white">Full stack web Developer</p>
-                    <br>
-                    <br>
+            <div class="col-xs-4 hidden-lg hidden-md slideInRight">
+                <div class="mobile-btn">
+                    <span><i class="mdi mdi-menu" aria-hidden="true"></i></span>
                 </div>
             </div>
         </div>
     </div>
+</header>
 
-
-    <div class="Middle_container">
-
-        <br>
-        <br>
-
-        <h1 class="display-3 flex">Who Am I?</h1>
-        <br>
-        <hr class="my-3">
-        <br>
-        <div class = "container">
-        <p class="lead"><strong>Full stack web developer continuously learning the new tech being applied in the technology field today. Experienced
-            with excellent client and project management skills. Dedicated to building customer loyalty and promoting win-win results for the company and the client. Action-oriented with strong ability to communicate effectively with technology, executive, and business audiences. 
-            </strong></p>
-          </div>
+<!-- Mobile menu -->
+<div class="mob-menu-wrapper hidden-md hidden-lg">
+    <div class="close-mob-menu">
+        <span><i class="mdi mdi-close" aria-hidden="true"></i></span>
     </div>
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#hello">Hello</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#feedback">Services</a></li>
+            <li><a href="#contact">Contact me</a></li>
+        </ul>
+    </div>
+</div>
+<!-- Mobile menu -->
 
-
-    <div class="Middle_container_2">
-        <br>
-        <br>
+<section id="hello" class="section">
+    <div class="container">
         <div class="row">
-
-            <div class="col-12 flex" id="Tech">
-                <h1 class="display-3">Technology Summary</h1>
-            </div>
-
-        </div>
-
-        <br>
-        <hr class="my-3">
-        <br>
-        <div class="row flex">
-
-            <div class="col-3 flex">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-header">
-                        Front-End
-                      </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">HTML5</li>
-                        <li class="list-group-item">CSS3</li>
-                        <li class="list-group-item">JavaScript</li>
-                        <li class="list-group-item">JQuery</li>
-                        <li class="list-group-item">Ajax</li>
-                        <li class="list-group-item">DOM Manipulation</li>
-                        <li class="list-group-item">API's</li>
-                        <li class="list-group-item">ReactJS</li>
-                    </ul>
+            <div class="col-md-6 about-img-wrap">
+                <div class="about-img wow slideInRight">
+                    <img src="media/hello-section/image.jpg" alt="" class="img-responsive">
                 </div>
             </div>
-            <div class="col-3 flex">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-header">
-                        Back-End
-                      </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">NodeJS</li>
-                        <li class="list-group-item">HandlebarsJS</li>
-                        <li class="list-group-item">ExpressJS</li>
-                        <li class="list-group-item">MySQL</li>
-                        <li class="list-group-item">Java</li>
-                        <li class="list-group-item">MongoDB</li>
-                        <li class="list-group-item">Sequelize/Mongoose</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-3 flex">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-header">
-                        Software
-                      </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Github</li>
-                        <li class="list-group-item">Git Version Control</li>
-                        <li class="list-group-item">Firebase</li>
-                        <li class="list-group-item">Git Bash</li>
-                        <li class="list-group-item">Command Prompt</li>
-                        <li class="list-group-item">FTP Client</li>
-                        <li class="list-group-item">AWS Console/CLI/SDK</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-3 flex">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-header">
-                        Certifications
-                      </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">AWS Cloud Practitioner</li>
-                    </ul>
+            <div class="col-md-6">
+                <div class="about-me wow slideInLeft">
+                    <div class="about-me-title">
+                        <h1><span class="point">I am Jason Nelson</span></h1>
+                    </div>
+                    <div class="about-me-text">
+                        <div class="opacity-box">
+                            <p>I am a Web Developer located in Dumont, NJ. I currently work
+                                at a startup in New York City. I am looking to take on more work and to increase my skills as
+                                a Web Developer.</p>
+                        </div>
+                    </div>
+                    <div class="about-me-info">
+                        <p>
+                            <span class="span-title">Phone</span>
+                            <span>+1-347-792-9311</span>
+                        </p>
+                        <p>
+                            <span class="span-title">Email</span>
+                            <span>jasonnelson11@gmail.com</span>
+                        </p>
+                        <p>
+                            <span class="span-title">Social</span>
+                            <span class="span-icons">
+                                <a target="_blank" href="https://www.linkedin.com/in/jason-n-84778a124/" class="mdi fonts-icons mdi-linkedin"></a>
+                                <a target="_blank" href="https://github.com/jasondamion/" class="mdi fonts-icons mdi-github-circle"></a>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="about-btns">
+                        <a data-toggle="modal" data-target="#contact-modal" href="#" class="site-btn">Contact me</a>
+                        <a href="./download/Jason-Resume.pdf" class="site-btn gray-btn">View Resume</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <br>
     </div>
+</section>
 
-    <div class="Middle_container_3">
-
-        <div class="row flex">
-
-            <div class="col-12 flex">
-
-                <div class="jumbotron bg-transparent" id="Projects">
-                    <h1 class="display-3 flex">Projects</h1>
-                    <hr class="my-3">
-                    <div class="col-12 flex" id="carousel_class">
-                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img class="d-block" src="./assets/images/daycarePic.PNG" alt="First slide">
-                                    <div class="carousel-caption">
-                                        <h5>A daycare web app made to keep track of the kids in my church</h5>
-                                        <h5>They can be clocked in, clocked out, or have their information be retireved
-                                        </h5>
-                                        <h5>The app is a full stack site so it uses express to view the page.</h5>
-                                        <h5 id="link_to_github"><a href="https://github.com/jasondamion/day_Care">Link
-                                                to github</a>
-                                        </h5>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block" src="./assets/images/Heavenly.PNG" alt="Second slide">
-                                    <div class="carousel-caption">
-                                        <h5 style="color:black;background-color: whitesmoke;opacity: 0.7;">A website made for Heavenly Joy, a event venue for all your small celebrations</h5>
-                                        <h5 id="link_to_site"><a href="https://jasondamion.github.io/HeavenlyJoyAndEntertainment/">Link to
-                                                site</a>
-                                        </h5>
-                                        <h5 id="link_to_github"><a href="https://github.com/jasondamion/HeavenlyJoyAndEntertainment">Link to
-                                            github</a>
-                                    </h5>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block" src="./assets/images/Student.PNG"
-                                        alt="Third Slide">
-                                        <div class= "carousel-caption">
-                                    <h5 style="color: black">A web app designed to meet students with similar interests as the user.</h5>
-                                    <h5 id="link_to_site"><a href="https://friend-finder900.herokuapp.com/">Link
-                                            to site</a></h5>
-                                    <h5 id="link_to_github"><a
-                                            href="https://github.com/jasondamion/FriendFinder">Link to github</a>
-                                    </h5>
-                                      </div>
-                                </div>
+<section id="skills" class="section">
+    <div class="container">
+        <div class="row wave-bg">
+            <div class="zigzag wow slideInLeft">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 105 20" xml:space="preserve">
+                    <g>
+                        <rect class="st0" width="105" height="20"/>
+                        <g>
+                            <polyline class="st1" points="2.5,5 16.8,15 31.1,5 45.3,15 59.6,5 73.9,15 88.2,5 102.5,15   "/>
+                        </g>
+                    </g>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 105 20" xml:space="preserve">
+                    <g>
+                        <rect class="st0" width="105" height="20"/>
+                        <g>
+                            <polyline class="st1" points="2.5,5 16.8,15 31.1,5 45.3,15 59.6,5 73.9,15 88.2,5 102.5,15   "/>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <div class="col-md-4 wow slideInLeft">
+                <div class="section-sidebar">
+                    <h2><span class="point">Skills</span></h2>
+                    <div class="opacity-box">
+                        <p>I love creating websites and web apps because they almost always address a need and I want to be the one to do it.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-6 wow zoomIn">
+                        <div class="advantages-box">
+                            <h4>Front End Development</h4>
+                            <div class="opacity-box">
+                                <p>HTML, CSS, SASS, Bootstrap, Wordpress, Javascript, React.JS, JQuery, Version Control, JSON</p>
                             </div>
-                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
-                                data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 wow zoomIn">
+                        <hr class="mobile-hr">
+                        <div class="advantages-box">
+                            <h4>Back End Development</h4>
+                            <div class="opacity-box">
+                                <p>Node.js, Java, MySql, MongoDB, Database Design, API Development, Integration and unit testing, Travis CI</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="experience" class="section">
+    <div class="container">
+        <div class="row wave-bg">
+            <div class="zigzag wow slideInLeft">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 105 20" xml:space="preserve">
+                    <g>
+                       <rect class="st0" width="105" height="20"/>
+                        <g>
+                            <polyline class="st1" points="2.5,5 16.8,15 31.1,5 45.3,15 59.6,5 73.9,15 88.2,5 102.5,15   "/>
+                        </g>
+                    </g>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 105 20" xml:space="preserve">
+                    <g>
+                        <rect class="st0" width="105" height="20"/>
+                        <g>
+                            <polyline class="st1" points="2.5,5 16.8,15 31.1,5 45.3,15 59.6,5 73.9,15 88.2,5 102.5,15   "/>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <div class="col-md-4 wow slideInLeft">
+                <div class="section-sidebar">
+                    <h2><span class="point">Experience</span></h2>
+                    <div class="opacity-box">
+                        <p>I work with growing businesses and individuals to meet their technological needs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 right-box">
+                <div class="row wow zoomIn">
+                    <div class="col-md-12">
+                        <div class="about-row">
+                            <h4 class="about-tittle">Back End Developer</h4>
+                            <p class="about-info">Etomon</p>
+                            <p>June, 2019 — Present</p>
+                            <div class="opacity-box">
+                                <ul>
+                                    <li>Work with developers to implement back-end services, APIs, and internal tools.</li>
+                                    <li>Debug issues and address performance bottlenecks.</li>
+                                    <li>Conform to modern best practices and coding standards.</li>
+                                    <li>Integrate applications with databases and work with table structures and data querying.</li>
+                                    <li>Implement unit tests.</li>
+                                    <li>Read and produce technical documentation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row wow zoomIn">
+                    <div class="col-md-12">
+                        <div class="about-row">
+                            <h4 class="about-tittle">Freelance Web Developer</h4>
+                            <p class="about-info">Myself</p>
+                            <p>Feb, 2019 — Present</p>
+                            <div class="opacity-box">
+                                <p>Build websites or web apps to help the business grow on the web. Making businesses more efficient with a technical feature replacing manual work. For example, creating a feature to book an appointment instead of the customer calling by phone and writing it down on hand.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="education" class="section">
+    <div class="container">
+        <div class="row wave-bg">
+            <div class="zigzag wow slideInLeft">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 105 20" xml:space="preserve">
+                    <g>
+                        <rect class="st0" width="105" height="20"/>
+                        <g>
+                            <polyline class="st1" points="2.5,5 16.8,15 31.1,5 45.3,15 59.6,5 73.9,15 88.2,5 102.5,15   "/>
+                        </g>
+                    </g>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 105 20" xml:space="preserve">
+                    <g>
+                        <rect class="st0" width="105" height="20"/>
+                        <g>
+                            <polyline class="st1" points="2.5,5 16.8,15 31.1,5 45.3,15 59.6,5 73.9,15 88.2,5 102.5,15   "/>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <div class="col-md-4 wow slideInLeft">
+                <div class="section-sidebar">
+                    <h2><span class="point">Education</span></h2>
+                    <div class="opacity-box">
+                        <p>All my life I have been driven by my strong belief that education
+                            is important. I try to learn something new every single day.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 right-box">
+                 <div class="row wow zoomIn">
+                    <div class="col-md-12">
+                        <div class="about-row">
+                            <h4 class="about-tittle">Computer Science</h4>
+                            <p class="about-info">University Of The People</p>
+                            <p>June, 2019 — Feb, 2021</p>
+                            <div class="opacity-box">
+                                <p>ASc in Computer Science.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row wow zoomIn">
+                    <div class="col-md-12">
+                        <div class="about-row">
+                            <h4 class="about-tittle">Rutgers Coding Bootcamp</h4>
+                            <p class="about-info">Rutgers</p>
+                            <p>Nov, 2018 — May, 2019</p>
+                            <div class="opacity-box">
+                                <p>An intensive 24-week long boot camp dedicated to designing and building full-stack web applications.
+                                     Skills learned consisted of HTML5, CSS3, JavaScript, jQuery, JBootstrap, Responsive Design, 
+                                     Cookies/Local Storage, Firebase, Node Js, MySQL, MongoDB, Express, Heroku, React Js, Git, Github Pages, 
+                                     Java, and Quality Assurance.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                        <div class="row wow zoomIn">
+                           <div class="col-md-12">
+                               <div class="about-row">
+                                   <h4 class="about-tittle">AWS Cloud Practitioner</h4>
+                                   <p class="about-info">AWS Online Learning</p>
+                                   <p>Mar 2019, Expires Mar, 2021</p>
+                                   <div class="opacity-box">
+                                       <p>Learned the knowledge and skills necessary to effectively demonstrate an overall understanding of the AWS Cloud.</p>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio" class="section section-small-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title wow slideInLeft">
+                    <h2><span class="point">Portfolio</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="portfolio-sort wow slideInLeft">
+                    <ul class="list-inline">
+                        <li class="colored-link" data-mixitup-control data-filter="all">All projects</li>
+                        <li class="colored-link" data-mixitup-control data-filter=".web-sites">Web sites</li>
+                        <li class="colored-link" data-mixitup-control data-filter=".web-apps">Web apps</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="portfolio">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-6 mix web-sites wow flipInX">
+                            <a data-toggle="modal" data-target="#portfolio-modal" data-name="kids" title="HeavenlyJoyAndEntertainment" href="#" class="portfolio-box">
+                                <div class="portfolio-img">
+                                    <img src="media/portfolio-images/portfolio-1.jpg" alt="">
+                                </div>
+                                <div class="portfolio-name">
+                                    <span>Kids Venue Website</span>
+                                </div>
+                                <div class="portfolio-date">
+                                    <span>June, 2019</span>
+                                </div>
                             </a>
-                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
-                                data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-6 mix web-apps wow flipInX">
+                            <a data-toggle="modal" data-target="#portfolio-modal" data-name="dayCare" title="Day Care Management" href="#" class="portfolio-box">
+                                <div class="portfolio-img">
+                                    <img src="media/portfolio-images/portfolio-2.jpg" alt="">
+                                </div>
+                                <div class="portfolio-name">
+                                    <span>Day Care Web App</span>
+                                </div>
+                                <div class="portfolio-date">
+                                    <span>April, 2019</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-6 mix web-apps wow flipInX">
+                            <a data-toggle="modal" data-target="#portfolio-modal" data-name="ewesta" title="Trivia" href="#" class="portfolio-box">
+                                <div class="portfolio-img">
+                                    <img src="media/portfolio-images/portfolio-3.jpg" alt="">
+                                </div>
+                                <div class="portfolio-name">
+                                    <span>Trivia game made for fun</span>
+                                </div>
+                                <div class="portfolio-date">
+                                    <span>December, 2018</span>
+                                </div>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <br>
     </div>
+</section>
 
-    <div class="End_container">
-        <div class="row flex">
-            <div class="col-12">
-                <h1 class="display-3 flex" id="Contact">Intrested? Sign Up!</h1>
-                <hr class="my-3">
+<section id="feedback" class="section"> <!-- This is actually the sevices -->
+    <div class="container">
+        <div class="row wave-bg">
+            <div class="zigzag wow slideInLeft">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 105 20" xml:space="preserve">
+                    <g>
+                        <rect class="st0" width="105" height="20"/>
+                        <g>
+                            <polyline class="st1" points="2.5,5 16.8,15 31.1,5 45.3,15 59.6,5 73.9,15 88.2,5 102.5,15   "/>
+                        </g>
+                    </g>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 105 20" xml:space="preserve">
+                    <g>
+                        <rect class="st0" width="105" height="20"/>
+                        <g>
+                            <polyline class="st1" points="2.5,5 16.8,15 31.1,5 45.3,15 59.6,5 73.9,15 88.2,5 102.5,15   "/>
+                        </g>
+                    </g>
+                </svg>
             </div>
-        </div>
-
-
-        <div class="row flex">
-            <div class="col-12">
-                <div class="form_container flex" id="Form">
-                    <a class="btn btn-secondary" href="https://goo.gl/forms/1VS3tKi5iNQ1hQDG3" role="button">Click
-                        me to
-                        fill out the form</a>
+            <div class="col-md-4 wow slideInLeft">
+                <div class="section-sidebar">
+                    <h2><span class="point">Services</span></h2>
+                    <div class="opacity-box">
+                        <p>Take a look at the services I offer and feel free to inquire about it</p>
+                    </div>
                 </div>
-                <br>
-                <br>
+            </div>
+            <div class="col-md-8 right-box">
+                <div class="row wow zoomIn">
+                    <div class="col-md-12">
+                        <div class="feedback-block">
+                            <img class="feedback-image" src="media/feedback-images/feedback-1.jpg" alt="">
+                            <h4 class="about-tittle">Website Development</h4>
+                            <p class="about-info">You want a website or want to add a new feature?</p>
+                            <div class="opacity-box">
+                                <p>Perfect! I will be more than happy to make a website for you. 
+                                    You can inquire below, be as specific as possible and I will get
+                                     in contact with you so we can start planning and talking about options for your website.
+                                      I look forward to talking to you.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row wow zoomIn">
+                    <div class="col-md-12">
+                        <div class="feedback-block">
+                            <img class="feedback-image" src="media/feedback-images/feedback-2.jpg" alt="">
+                            <h4 class="about-tittle">Software Development</h4>
+                            <p class="about-info">You want a web app or want to add a new feature?</p>
+                            <div class="opacity-box">
+                                <p>Thats great! I can't wait to get started, inquire below so we can start talking and 
+                                    planning and exploring possibilities for your amazing app.
+                                     I look forward to talking to you.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row wow zoomIn">
+                    <div class="col-md-12">
+                        <div class="feedback-block">
+                            <img class="feedback-image" src="media/feedback-images/feedback-3.jpg" alt="">
+                            <h4 class="about-tittle">Maintainance?</h4>
+                            <p class="about-info">You want a developer to constantly watch your site/app to make sure
+                                 it has the latest modules etc for security? Need the site updated from time to time?</p>
+                            <div class="opacity-box">
+                                <p>Awesome! Inquire below and I will be happy to help keep your product as safe as possible. 
+                                    Please be as specific as possible so there are no misunderstandings.
+                                     I look forward to talking to you.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="footer_container">
-        <br>
-        <br>
-        <div class="row flex">
-            <h1 class="display-3 text-white">Get in touch</h1>
-        </div>
-        <br>
-        <br>
-        <div class="row flex">
-            <a class="display-3 text-white"
-                href="mailto:info@jasondesigns.net?subject=Question&amp;body=Please%20state%20your%20name,%20email,%20and%20your%20message">Info@jasondesigns.net</a>
-        </div>
-        <br>
-        <br>
-        <div class="row flex text-white">
-            <h1 class="display-3">Phone Number: 347-792-9311</h1>
+</section>
+
+<section id="contact" class="section">
+    <div class="container">
+        <div class="row wave-bg">
+            <div class="zigzag wow slideInLeft">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 105 20" xml:space="preserve">
+                    <g>
+                        <rect class="st0" width="105" height="20"/>
+                        <g>
+                            <polyline class="st1" points="2.5,5 16.8,15 31.1,5 45.3,15 59.6,5 73.9,15 88.2,5 102.5,15   "/>
+                        </g>
+                    </g>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 105 20" xml:space="preserve">
+                    <g>
+                        <rect class="st0" width="105" height="20"/>
+                        <g>
+                            <polyline class="st1" points="2.5,5 16.8,15 31.1,5 45.3,15 59.6,5 73.9,15 88.2,5 102.5,15   "/>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <div class="col-md-4 wow slideInLeft">
+                <div class="section-sidebar">
+                    <h2><span class="point">Contact</span></h2>
+                    <div class="opacity-box">
+                        <p>Want a website or app? Website update? Need maintainance? Im your guy, inquire with a name and email and ill get back to you as soon as I can.</p>
+                    </div>
+                </div>
+            </div>
+            <form action="#" class="wow slideInRight js-footer-form">
+                <div class="form-wrapper">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <input class="form-field js-field-name" type="text" placeholder="Name" id = "nameForEmail" required>
+                            <span class="form-validation"></span>
+                            <span class="form-invalid-icon"><i class="mdi mdi-close" aria-hidden="true"></i></span>
+                        </div>
+
+                        <div class="form-group">
+                            <input class="form-field js-field-email" type="email" placeholder="E-mail" id = "emailForEmail" required>
+                            <span class="form-validation"></span>
+                            <span class="form-invalid-icon"><i class="mdi mdi-close" aria-hidden="true"></i></span>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="form-group">
+                            <textarea class="form-field js-field-message" placeholder="Message" id = "messForEmail" required></textarea>
+                            <span class="form-validation"></span>
+                        </div>
+                        <div class="submit-holder">
+                            <input class="site-btn" type="submit" id = "subEmail" value="Send message">
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
+</section>
 
+<!-- Contact me modal -->
+<div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="portfolio-modal">
+    <div class="modal-dialog modal-center" role="document">
+        <div class="modal-content" >
+            <div class="modal-body">
+                <div class="modal-title">
+                    <h1><span class="point">Contact</span></h1>
+                </div>
+                <div class="modal-description">
+                    <p>Want a website or app? Website update? Need maintainance? Im your guy, 
+                        inquire below with a name and email and ill get back to you as soon as I can.</p>
+                </div>
+                <div class="modal-form">
+                    <form action="#" class="js-modal-form">
+                        <div class="row form-wrapper">
+                            <div class="col-lg-5 col-md-5">
+                                <div class="form-group">
+                                    <input class="form-field js-field-name" type="text" placeholder="Name" id = "nameForEmailMod" required>
+                                    <span class="form-validation"></span>
+                                    <span class="form-invalid-icon"><i class="mdi mdi-close" aria-hidden="true"></i></span>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-field js-field-email" type="email" placeholder="E-mail" id = "emailForEmailMod" required>
+                                    <span class="form-validation"></span>
+                                    <span class="form-invalid-icon"><i class="mdi mdi-close" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 col-md-7">
+                                <div class="form-group">
+                                    <textarea class="form-field js-field-message" placeholder="Message" id = "messForEmailMod" required></textarea>
+                                    <span class="form-validation"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="submit-holder">
+                                    <input class="site-btn js-submit-contact" type="submit" id = "subEmailMod" value="Send message">
+                                    <a href="#" class="site-btn gray-btn" data-dismiss="modal">Back to Resume</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact me modal -->
 
+<!-- Thank you modal -->
+<div class="modal fade" id="thanks-modal" tabindex="-1" role="dialog" aria-labelledby="thanks-modal">
+    <div class="modal-dialog modal-center" role="document">
+        <div class="modal-content" >
+            <div class="modal-body">
+                <div class="modal-title">
+                    <h1><span class="point">Your message has been sent</span></h1>
+                </div>
+                <div class="modal-description">
+                    <p>Thank you for your interest in my work. I’ll contact you just in a few
+                        days. Stay tuned and see you soon, friend!</p>
+                </div>
+                <a href="#" class="site-btn" data-dismiss="modal">Back to site</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Thank you modal -->
 
+<!-- Error message modal -->
+<div class="modal fade" id="error-modal" tabindex="-1" role="dialog" aria-labelledby="error-modal">
+    <div class="modal-dialog modal-center" role="document">
+        <div class="modal-content" >
+            <div class="modal-body">
+                <div class="modal-title">
+                    <h1><span class="point">Ooops!</span></h1>
+                </div>
+                <div class="modal-description">
+                    <p>Something go wrong!</p>
+                </div>
+                <a href="#" class="site-btn" data-dismiss="modal">Try again</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Error message modal -->
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/jquery.placeholder.min.js"></script>
+
+<!--Mix It Up-->
+<script src="assets/mixitup-v3/dist/mixitup.min.js"></script>
+
+<!--THEME-->
+<script src="js/wow.min.js"></script>
+
+<script src="js/theme.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+<script src ="js/email.js"></script>
 </body>
+</html>
