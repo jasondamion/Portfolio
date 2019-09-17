@@ -10,6 +10,7 @@ axios.post('https://email-servo.herokuapp.com/portfolio', {
   .catch(function (error) {
     console.log("Error sending email: "+ error);
   });
+  $("#thanks-modal").show("fast");
 })
 
 $("#subEmailMod").on("click", function(){
@@ -24,4 +25,5 @@ $("#subEmailMod").on("click", function(){
       .catch(function (error) {
         console.log("Error sending email: "+ error);
       });
+      $("#thanks-modal").show("fast");
     })
