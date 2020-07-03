@@ -5,12 +5,17 @@ axios.post('https://email-servo.herokuapp.com/portfolio', {
     message: $("#messForEmail").val()
   })
   .then(function (response) {
-    console.log("Email Sent");
+    setTimeout(function(){
+      $("#thanks-modal").css("opacity","1")
+      $('#thanks-modal').show('fast')
+    },1000)
   })
   .catch(function (error) {
-    console.log("Error sending email: "+ error);
+    setTimeout(function(){
+      $("#error-modal").css("opacity","1")
+      $('#error-modal').show('fast')
+    },1000)
   });
-  $("#thanks-modal").show("fast");
 })
 
 $("#subEmailMod").on("click", function(){
@@ -20,10 +25,14 @@ $("#subEmailMod").on("click", function(){
         message: $("#messForEmailMod").val()
       })
       .then(function (response) {
-        console.log("Email Sent");
+        setTimeout(function(){
+          $("#thanks-modal").css("opacity","1")
+          $('#thanks-modal').show('fast')
+        },1000)
       })
       .catch(function (error) {
-        console.log("Error sending email: "+ error);
-      });
-      $("#thanks-modal").show("fast");
+        setTimeout(function(){
+          $("#error-modal").css("opacity","1")
+          $('#error-modal').show('fast')
+        },1000)      });
     })
